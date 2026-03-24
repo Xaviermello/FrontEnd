@@ -1,0 +1,75 @@
+/* ============================================================
+   CEEP — Register Page CSS
+   Baseado no login (mesmo padrão visual)
+   ============================================================ */
+
+/* Reaproveita tudo do login */
+@import url('loginAdmin.css');
+
+/* ---------- Ajustes específicos do registro ---------- */
+
+/* Select (tipo de usuário) no mesmo padrão dos inputs */
+.login-field select {
+  width: 100%;
+  height: 46px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0 14px;
+  font-size: 15px;
+  color: #111827;
+  background: #fafafa;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  outline: none;
+  font-family: inherit;
+  appearance: none;
+  cursor: pointer;
+}
+
+.login-field select:hover {
+  border-color: #d1d5db;
+  background: #fff;
+}
+
+.login-field select:focus {
+  border-color: #1a3a6b;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(26, 58, 107, 0.10);
+}
+
+/* Mensagem abaixo do formulário (link registro/login) */
+.register-extra {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13.5px;
+  color: #6b7280;
+}
+
+.register-extra a {
+  color: #1a3a6b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.register-extra a:hover {
+  color: #14305c;
+  text-decoration: underline;
+}
+
+/* Feedback visual de erro */
+.input-error {
+  border-color: #ef4444 !important;
+  background: #fff !important;
+}
+
+/* Feedback visual de sucesso */
+.input-success {
+  border-color: #22c55e !important;
+}
+
+/* Melhor organização para telas menores (registro tem mais campos) */
+@media (max-width: 576px) {
+  .login-form-wrap {
+    gap: 16px;
+  }
+}
